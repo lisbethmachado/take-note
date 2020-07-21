@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const connection = require("../connection");
+const connection = require("../../public/assets/js/index");
 
 router.get("/api/notes", function (req, res) {
   connection.query("SELECT * FROM notes", function (err, result) {
